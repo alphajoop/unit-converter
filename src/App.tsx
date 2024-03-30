@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Footer from './components/Footer';
 import InputField from './components/InputField';
 import OutputDisplay from './components/OutputDisplay';
 import UnitSelector from './components/UnitSelector';
@@ -121,6 +122,7 @@ function App() {
         {error && <div className="text-red-500">{error}</div>}
         <OutputDisplay value={outputValue} />
       </div>
+      <Footer />
     </div>
   );
 }
