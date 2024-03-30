@@ -78,7 +78,9 @@ function App() {
                     ? bytes * Math.pow(1024, 2)
                     : inputUnit === 'kilobyte'
                       ? bytes * 1024
-                      : bytes;
+                      : inputUnit === 'byte'
+                        ? bytes
+                        : bytes * 8;
 
     // Conversion des octets à l'unité de destination
     const output =
@@ -98,7 +100,9 @@ function App() {
                     ? bytesValue / Math.pow(1024, 2)
                     : outputUnit === 'kilobyte'
                       ? bytesValue / 1024
-                      : bytesValue;
+                      : outputUnit === 'byte'
+                        ? bytesValue
+                        : bytesValue * 8;
 
     setOutputValue(output.toFixed(2));
   };

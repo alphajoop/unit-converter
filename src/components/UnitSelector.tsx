@@ -11,6 +11,7 @@ function UnitSelector({ value, onChange }: UnitSelectorProps) {
       className="h-10 w-full sm:w-50 md:w-40 lg:w-48 xl:w-56 rounded-lg bg-gray-50 border border-gray-300 text-gray-900 px-3 py-2 text-sm focus:ring-blue-500 focus:border-blue-500 focus:outline-none"
       title="Choisir l'unité de mesure"
     >
+      <option value="bit">Bit</option>
       <option value="byte">Octet</option>
       <option value="kilobyte">Kilooctet</option>
       <option value="megabyte">Mégaoctet</option>
