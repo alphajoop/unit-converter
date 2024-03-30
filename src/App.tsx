@@ -62,27 +62,31 @@ function App() {
 
     // Conversion vers les octets
     const bytesValue =
-      inputUnit === 'terabyte'
-        ? bytes * Math.pow(1024, 4)
-        : inputUnit === 'gigabyte'
-          ? bytes * Math.pow(1024, 3)
-          : inputUnit === 'megabyte'
-            ? bytes * Math.pow(1024, 2)
-            : inputUnit === 'kilobyte'
-              ? bytes * 1024
-              : bytes;
+      inputUnit === 'petabyte'
+        ? bytes * Math.pow(1024, 5)
+        : inputUnit === 'terabyte'
+          ? bytes * Math.pow(1024, 4)
+          : inputUnit === 'gigabyte'
+            ? bytes * Math.pow(1024, 3)
+            : inputUnit === 'megabyte'
+              ? bytes * Math.pow(1024, 2)
+              : inputUnit === 'kilobyte'
+                ? bytes * 1024
+                : bytes;
 
     // Conversion des octets à l'unité de destination
     const output =
-      outputUnit === 'terabyte'
-        ? bytesValue / Math.pow(1024, 4)
-        : outputUnit === 'gigabyte'
-          ? bytesValue / Math.pow(1024, 3)
-          : outputUnit === 'megabyte'
-            ? bytesValue / Math.pow(1024, 2)
-            : outputUnit === 'kilobyte'
-              ? bytesValue / 1024
-              : bytesValue;
+      outputUnit === 'petabyte'
+        ? bytesValue / Math.pow(1024, 5)
+        : outputUnit === 'terabyte'
+          ? bytesValue / Math.pow(1024, 4)
+          : outputUnit === 'gigabyte'
+            ? bytesValue / Math.pow(1024, 3)
+            : outputUnit === 'megabyte'
+              ? bytesValue / Math.pow(1024, 2)
+              : outputUnit === 'kilobyte'
+                ? bytesValue / 1024
+                : bytesValue;
 
     setOutputValue(output.toFixed(2));
   };
