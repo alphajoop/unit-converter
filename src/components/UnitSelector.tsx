@@ -19,6 +19,7 @@ function UnitSelector({ value, onChange }: UnitSelectorProps) {
       <option value="petabyte">Pétaoctet</option>
       <option value="exabyte">Exaoctet</option>
       <option value="zettabyte">Zettaoctet</option>
+      <option value="yottabyte">Yottaoctet</option>
     </select>
   );
 }
