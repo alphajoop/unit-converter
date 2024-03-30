@@ -15,6 +15,7 @@ function UnitSelector({ value, onChange }: UnitSelectorProps) {
       <option value="kilobyte">Kilooctet</option>
       <option value="megabyte">Mégaoctet</option>
       <option value="gigabyte">Gigaoctet</option>
+      <option value="terabyte">Téraoctet</option>
     </select>
   );
 }
